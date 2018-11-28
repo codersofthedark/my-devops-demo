@@ -10,7 +10,7 @@ app = Flask(__name__)
 def root():
     logging.debug(request.path)
     logging.debug(request.method)
-    logging.info(str(request.headers).replace(chr(10),' '))
+    logging.debug(str(request.headers).replace(chr(10),' '))
     return "Request Completed"
 
 
