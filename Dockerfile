@@ -1,4 +1,4 @@
-FROM 2.7.15-jessie
+FROM Python:2.7.15-jessie
 RUN pip install -r requirements.txt
 EXPOSE 5000
 WORKDIR /
